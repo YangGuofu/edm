@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDM</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .input-group {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <h1>EMD管理</h1>
+        <form action="send.php" method="post" enctype="multipart/form-data" class="col-xs-6 col-xs-offset-3 row">
+            <div class="input-group">
+                <label for="subject">主题</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+
+            <div class="input-group">
+                <label for="body">内容</label>
+                <input type="text" class="form-control" id="body" name="body" required>
+            </div>
+
+            <div class="input-group">
+                <label for="addresser">发件人</label>
+                <input type="file" class="form-control" id="addresser" name="addresser" required>
+            </div>
+
+            <div class="input-group">
+                <label for="addressee">收件人</label>
+                <input type="file" class="form-control" id="addressee" name="addressee" required>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="btn-primary">发送</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <h1>下载模板</h1>
+        <div>
+            <a href="发件人模板.xlsx">发件人模板</a>
+        </div>
+        <div>
+            <a href="收件人模板.xlsx">收件人模板</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <h1>步骤</h1>
+        <div>1. 下载发件人模板和收件人模板</div>
+        <div>2. 导入收件人至收件人模板</div>
+        <div>3. 登录发件人邮箱后台，开通SMTP，保存授权码</div>
+        <div>4. 导入发件人至发件人模板</div>
+        <div>5. 重复3/4步骤至发件人足够多</div>
+        <div>6. 填写表单发送邮件（约4s/个，测试不要用太多）</div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+

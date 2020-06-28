@@ -1,0 +1,14 @@
+{
+    "name": "cpt/edm",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Chenxinyue",
+            "email": "1150249582@qq.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.1",
+        "phpoffice/phpspreadsheet": "^1.13"
+    }
+}
